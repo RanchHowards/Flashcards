@@ -1,0 +1,39 @@
+<% layout('../layouts/boilerplate') -%>
+
+<h1>Edit your cards, <strong><%= currentUser.username%></strong></h1>
+<section id="edit">
+    <% for (let key in data.words){ for (let word in data.words[key]){%>
+
+    <div class="card-group">
+        <!-- <form action="/addcards/edit?_method=PUT" method='POST' style="display: flex;
+                flex-flow: row wrap;
+                align-items: center;"> -->
+        <div class="card front">
+
+            <div class="card-body">
+                <p class="card-title">Front</p>
+                <input class="form-control" type="text" name="words.<%=key%>." value="<%= word %>">
+                <!-- <button class="btn btn-sm btn-warning" id="words.<%=key%>.<%=word%>">alter</button>      -->
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+        </div>
+        <div class="card back">
+
+            <div class="card-body back">
+                <h5 class="card-title">Back</h5>
+                <input class="form-control" type="text" name="words.<%=key%>." value="<%= data.words[key][word] %>">
+                <!-- <button class="btn btn-sm btn-secondary" id="words.<%=key%>.<%=word%>">alter</button>  -->
+
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+        </div>
+        <div class="d-flex flex-column">
+            <button class="btn btn-sm btn-success flex-fill" id="words.<%=key%>.<%=word%>">UPDATE</button>
+            <button class="btn btn-sm btn-danger flex-fill" id="deleteCard>">DELETE</button>
+        </div>
+
+        <!-- </form> -->
+    </div>
+    <% }}%>
+</section>
+<script defer src="/scripts/editCards.js"></script>

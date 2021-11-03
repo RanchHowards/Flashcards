@@ -1,0 +1,11 @@
+<% layout('../layouts/boilerplate') -%>
+
+<div class="spinner-border text-danger " role="status">
+    <span class="sr-only">Loading...</span>
+</div>
+
+
+<div class="error-alert alert alert-danger" role="alert">
+    <h4 class="alert-heading"><%= err.message%></h4>
+    <p><%= err.stack %>></p>
+</div>

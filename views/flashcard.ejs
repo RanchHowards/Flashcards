@@ -1,0 +1,33 @@
+<% layout('../layouts/boilerplate') -%>
+<div class="flipCard" id='flipCard'>
+    <div class="card">
+        <div class="side front" id='english'>English</div>
+        <div class="side back" id='spanish'>Spanish</div>
+    </div>
+</div>
+<div class="progress">
+    <div class="progress-bar bg-success progress-bar-striped" role="progressbar" id='correctProgress'></div>
+    <div class="progress-bar bg-danger progress-bar-striped" role="progressbar" id='incorrectProgress'></div>
+</div>
+<div class='container button-container'>
+    <div class="btn-group start-button invisible" id='start-group' role='group'>
+        <button type='button' id='start' class="btn btn-info btn-block">START</button>
+
+    </div>
+    <div class="btn-group group-button invisible" role='group'>
+        <button type='button' id='correct' class="btn btn-lg btn-success">Correct</button>
+        <button type='button' id='saveSession' class="btn  btn-secondary">Save</button>
+        <button type='button' id='wrong' class="btn btn-lg btn-danger">Wrong</button>
+    </div>
+</div>
+<div class='container'>
+    <div class="newSession">
+        <button id='newSession' class="btn btn-lg btn-primary btn-block">New Session</button>
+    </div>
+</div>
+<div class='container'>
+    <div class="saveSession">
+
+    </div>
+</div>
+<script defer src="/scripts/flashcardObjects.js"></script>
