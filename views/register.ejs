@@ -1,27 +1,42 @@
 <% layout('../layouts/boilerplate') -%>
 
-    <h1 class="text-center">Register</h1>
+<h1 class="text-center">Register</h1>
 
-    <div class="col">
-        <form action="/register" method="post" class='needs-validation' novalidate>
-            <div class="mb-3">
-                <label class='form-label' for='username'>Username</label>
-                <input class="form-control" type="text" name="username" id="username" required>
-                <div class="valid-feedback">Looks YummO!</div>
-            </div>
-            <div class="mb-3">
-                <label class='form-label' for='email'>Email</label>
-                <input class="form-control" type="email" name="email" id="email" required>
-                <div class="valid-feedback">Sure is an email address!</div>
-            </div>
-            <div class="mb-3">
-                <label class='form-label' for='password'>Password</label>
-                <input class="form-control" type="password" name="password" id="password" required>
-                <div class="valid-feedback">HOLY FUCKING SHIIIIIITTTT!!!!</div>
-            </div>
-            <button class="btn btn-success">Submit, chump</button>
-        </form>
+<div class="col">
+  <form action="/register" method="post" class="needs-validation" novalidate>
+    <div class="mb-3">
+      <label class="form-label" for="username">Username</label>
+      <input
+        class="form-control"
+        type="text"
+        name="username"
+        id="username"
+        required
+      />
+      <div class="valid-feedback">Looks YummO!</div>
     </div>
-
-
-   
+    <div class="mb-3">
+      <label class="form-label" for="email">Email</label>
+      <input
+        class="form-control"
+        type="email"
+        name="email"
+        id="email"
+        required
+      />
+      <div class="valid-feedback">Sure is an email address!</div>
+    </div>
+    <div class="mb-3">
+      <label class="form-label" for="password">Password</label>
+      <input
+        class="form-control"
+        type="password"
+        name="password"
+        id="password"
+        required
+      />
+      <div class="valid-feedback">Kazammm!!!!</div>
+    </div>
+    <button class="btn btn-success">Submit</button>
+  </form>
+</div>
